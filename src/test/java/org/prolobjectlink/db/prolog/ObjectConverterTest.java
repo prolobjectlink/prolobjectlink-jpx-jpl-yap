@@ -32,7 +32,7 @@ import org.prolobjectlink.prolog.jpl.yap.YapProlog;
 public class ObjectConverterTest extends BaseTest {
 
 	protected static final Class<?> engine = YapProlog.class;
-	protected static final PrologProvider provider = Prolog.newProvider(engine);
+	protected static final PrologProvider provider = Prolog.getProvider(engine);
 	protected static final ObjectConverter<PrologTerm> converter = new PrologObjectConverter(provider);
 
 	@Test

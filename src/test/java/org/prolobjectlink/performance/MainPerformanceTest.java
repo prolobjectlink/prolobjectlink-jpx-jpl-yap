@@ -20,7 +20,7 @@ public class MainPerformanceTest {
 	// private static final String ROOT = "data" + File.separator + "test";
 
 	protected static final Class<? extends ContainerFactory> driver = YapPrologContainerFactory.class;
-	protected static final PrologProvider prolog = Prolog.newProvider(YapProlog.class);
+	protected static final PrologProvider prolog = Prolog.getProvider(YapProlog.class);
 
 	public MainPerformanceTest() {
 	}

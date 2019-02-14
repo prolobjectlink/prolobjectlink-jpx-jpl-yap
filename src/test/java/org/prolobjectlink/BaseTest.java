@@ -78,7 +78,7 @@ public abstract class BaseTest {
 	protected static final String BACKUP_ZIP_FILE_PATH_4 = BACKUP_DIRECTORY + BACKUP_ZIP_FILE_NAME_4;
 
 	protected static final Class<? extends ContainerFactory> driver = YapPrologContainerFactory.class;
-	protected static final PrologProvider provider = Prolog.newProvider(YapProlog.class);
+	protected static final PrologProvider provider = Prolog.getProvider(YapProlog.class);
 
 	protected static final PrologInteger zero = provider.newInteger(0);
 	protected static final PrologInteger one = provider.newInteger(1);
