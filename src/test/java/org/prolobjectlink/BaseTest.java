@@ -22,6 +22,7 @@ import org.prolobjectlink.db.StorageManager;
 import org.prolobjectlink.db.StorageMode;
 import org.prolobjectlink.db.StoragePool;
 import org.prolobjectlink.db.etc.Settings;
+import org.prolobjectlink.db.prolog.jpl.yap.YapPrologContainerFactory;
 import org.prolobjectlink.domain.geometry.Point;
 import org.prolobjectlink.domain.geometry.Polygon;
 import org.prolobjectlink.domain.geometry.Segment;
@@ -35,7 +36,6 @@ import org.prolobjectlink.domain.model.view.AnEmployeeView;
 import org.prolobjectlink.prolog.Prolog;
 import org.prolobjectlink.prolog.PrologInteger;
 import org.prolobjectlink.prolog.PrologProvider;
-import org.prolobjectlink.prolog.jpl.swi.YapPrologContainerFactory;
 import org.prolobjectlink.prolog.jpl.yap.YapProlog;
 
 /** @author Jose Zalacain @since 1.0 */

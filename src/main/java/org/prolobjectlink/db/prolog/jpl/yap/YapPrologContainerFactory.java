@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package org.prolobjectlink.prolog.jpl.swi;
+package org.prolobjectlink.db.prolog.jpl.yap;
 
 import org.prolobjectlink.db.HierarchicalCache;
 import org.prolobjectlink.db.etc.Settings;

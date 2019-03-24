@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package org.prolobjectlink.prolog.jpl.swi;
+package org.prolobjectlink.db.prolog.jpl.yap;
 
 import static org.prolobjectlink.db.XmlParser.XML;
 
