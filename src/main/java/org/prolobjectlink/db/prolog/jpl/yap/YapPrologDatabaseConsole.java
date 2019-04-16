@@ -30,7 +30,6 @@ import org.prolobjectlink.db.platform.linux.LinuxDatabaseServer;
 import org.prolobjectlink.db.platform.macosx.MacosxDatabaseServer;
 import org.prolobjectlink.db.platform.win32.Win32DatabaseServer;
 import org.prolobjectlink.db.prolog.AbstractDatabaseConsole;
-import org.prolobjectlink.prolog.jpl.yap.YapProlog;
 import org.prolobjectlink.web.platform.UndertowServerControl;
 import org.prolobjectlink.web.platform.UndertowWebServer;
 import org.prolobjectlink.web.platform.WebPlatformUtil;
@@ -47,13 +46,13 @@ import org.prolobjectlink.web.platform.win32.undertow.Win32UndertowWebServer;
 public class YapPrologDatabaseConsole extends AbstractDatabaseConsole implements DatabaseConsole {
 
 	public YapPrologDatabaseConsole() {
-		super(new YapProlog());
+		super(new YapPrologDatabaseProvider());
 	}
 
 	public static void main(String[] args) {
 		new YapPrologDatabaseConsole().run(args);
 	}
-	
+
 	public WebServerControl getWebServerControl(int port) {
 		UndertowWebServer server = null;
 		DatabaseServer database = null;
@@ -72,6 +71,5 @@ public class YapPrologDatabaseConsole extends AbstractDatabaseConsole implements
 		}
 		return new UndertowServerControl(server, database);
 	}
-
 
 }
