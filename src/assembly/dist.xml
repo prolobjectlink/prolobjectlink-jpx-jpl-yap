@@ -14,7 +14,7 @@
 			<directory>${project.basedir}</directory>
 			<outputDirectory>/</outputDirectory>
 			<includes>
-				
+
 				<include>CONTRIBUTING*</include>
 				<include>LICENSE*</include>
 				<include>NOTICE*</include>
@@ -84,7 +84,7 @@
 			<directory>${project.basedir}/web</directory>
 			<outputDirectory>web</outputDirectory>
 		</fileSet>
-		
+
 		<!-- install scripts -->
 		<fileSet>
 			<directory>${project.basedir}</directory>
@@ -93,7 +93,7 @@
 				<include>install.*</include>
 			</includes>
 		</fileSet>
-		
+
 		<!-- persistence xml -->
 		<fileSet>
 			<directory>${project.basedir}/src/test/resources/META-INF</directory>

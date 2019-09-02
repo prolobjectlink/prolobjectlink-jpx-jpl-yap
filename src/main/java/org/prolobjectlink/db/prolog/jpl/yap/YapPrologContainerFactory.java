@@ -22,12 +22,11 @@ package org.prolobjectlink.db.prolog.jpl.yap;
 import org.prolobjectlink.db.HierarchicalCache;
 import org.prolobjectlink.db.etc.Settings;
 import org.prolobjectlink.db.prolog.PrologContainerFactory;
-import org.prolobjectlink.prolog.jpl.yap.YapProlog;
 
 public final class YapPrologContainerFactory extends PrologContainerFactory {
 
 	public YapPrologContainerFactory(Settings settins) {
-		super(settins, new YapProlog());
+		super(settins, new YapPrologDatabaseProvider());
 	}
 
 	public HierarchicalCache createHierarchicalCache() {

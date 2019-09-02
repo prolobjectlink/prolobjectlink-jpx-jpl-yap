@@ -41,6 +41,7 @@ import org.prolobjectlink.db.StorageMode;
 import org.prolobjectlink.db.StoragePool;
 import org.prolobjectlink.db.etc.Settings;
 import org.prolobjectlink.db.prolog.jpl.yap.YapPrologContainerFactory;
+import org.prolobjectlink.db.prolog.jpl.yap.YapPrologDatabaseProvider;
 import org.prolobjectlink.domain.geometry.Point;
 import org.prolobjectlink.domain.geometry.Polygon;
 import org.prolobjectlink.domain.geometry.Segment;
@@ -54,7 +55,6 @@ import org.prolobjectlink.domain.model.view.AnEmployeeView;
 import org.prolobjectlink.prolog.Prolog;
 import org.prolobjectlink.prolog.PrologInteger;
 import org.prolobjectlink.prolog.PrologProvider;
-import org.prolobjectlink.prolog.jpl.yap.YapProlog;
 
 /** @author Jose Zalacain @since 1.0 */
 public abstract class BaseTest {
@@ -96,7 +96,7 @@ public abstract class BaseTest {
 	protected static final String BACKUP_ZIP_FILE_PATH_4 = BACKUP_DIRECTORY + BACKUP_ZIP_FILE_NAME_4;
 
 	protected static final Class<? extends ContainerFactory> driver = YapPrologContainerFactory.class;
-	protected static final PrologProvider provider = Prolog.getProvider(YapProlog.class);
+	protected static final PrologProvider provider = Prolog.getProvider(YapPrologDatabaseProvider.class);
 
 	protected static final PrologInteger zero = provider.newInteger(0);
 	protected static final PrologInteger one = provider.newInteger(1);
