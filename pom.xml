@@ -99,9 +99,14 @@
 			<artifactId>prolobjectlink-jpp-javax</artifactId>
 			<version>[1.0.0, )</version>
 		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>org.prolobjectlink</groupId> -->
+		<!-- <artifactId>prolobjectlink-jps-undertow</artifactId> -->
+		<!-- <version>[1.0.0, )</version> -->
+		<!-- </dependency> -->
 		<dependency>
 			<groupId>org.prolobjectlink</groupId>
-			<artifactId>prolobjectlink-jps-undertow</artifactId>
+			<artifactId>prolobjectlink-jps-grizzly</artifactId>
 			<version>[1.0.0, )</version>
 		</dependency>
 		<dependency>
