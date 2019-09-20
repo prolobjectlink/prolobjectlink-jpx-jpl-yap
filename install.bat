@@ -5,3 +5,4 @@ SET CLASSPATH=%CURRENT_DIRECTORY%lib\*
 
 : default jdk
 java -classpath %CLASSPATH% org.prolobjectlink.db.prolog.jpl.yap.YapPrologDatabaseConsole -g
+java -classpath %CLASSPATH% org.prolobjectlink.db.prolog.jpl.yap.YapPrologDatabaseConsole -s
