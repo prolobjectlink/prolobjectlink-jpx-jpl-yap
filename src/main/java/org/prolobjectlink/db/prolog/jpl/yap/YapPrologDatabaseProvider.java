@@ -21,9 +21,8 @@
  */
 package org.prolobjectlink.db.prolog.jpl.yap;
 
-import org.prolobjectlink.db.prolog.PrologDatabaseEngine;
-import org.prolobjectlink.db.prolog.PrologDatabaseProvider;
-
+import io.github.prolobjectlink.db.prolog.PrologDatabaseEngine;
+import io.github.prolobjectlink.db.prolog.PrologDatabaseProvider;
 import io.github.prolobjectlink.prolog.jpl.yap.YapProlog;
 
 public class YapPrologDatabaseProvider extends YapProlog implements PrologDatabaseProvider {

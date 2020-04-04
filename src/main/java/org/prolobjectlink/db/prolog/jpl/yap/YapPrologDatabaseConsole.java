@@ -24,21 +24,21 @@ package org.prolobjectlink.db.prolog.jpl.yap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.prolobjectlink.db.DatabaseConsole;
-import org.prolobjectlink.db.DatabaseServer;
-import org.prolobjectlink.db.platform.linux.LinuxDatabaseServer;
-import org.prolobjectlink.db.platform.macosx.MacosxDatabaseServer;
-import org.prolobjectlink.db.platform.win32.Win32DatabaseServer;
-import org.prolobjectlink.db.prolog.AbstractDatabaseConsole;
-import org.prolobjectlink.web.application.GrizzlyModelGenerator;
-import org.prolobjectlink.web.application.ModelGenerator;
-import org.prolobjectlink.web.platform.GrizzlyServerControl;
-import org.prolobjectlink.web.platform.GrizzlyWebServer;
-import org.prolobjectlink.web.platform.WebPlatformUtil;
-import org.prolobjectlink.web.platform.WebServerControl;
-import org.prolobjectlink.web.platform.linux.grizzly.LinuxGrizzlyWebServer;
-import org.prolobjectlink.web.platform.macosx.grizzly.MacosxGrizzlyWebServer;
-import org.prolobjectlink.web.platform.win32.grizzly.Win32GrizzlyWebServer;
+import io.github.prolobjectlink.db.DatabaseConsole;
+import io.github.prolobjectlink.db.DatabaseServer;
+import io.github.prolobjectlink.db.platform.linux.LinuxDatabaseServer;
+import io.github.prolobjectlink.db.platform.macosx.MacosxDatabaseServer;
+import io.github.prolobjectlink.db.platform.win32.Win32DatabaseServer;
+import io.github.prolobjectlink.db.prolog.AbstractDatabaseConsole;
+import io.github.prolobjectlink.web.application.GrizzlyModelGenerator;
+import io.github.prolobjectlink.web.application.ModelGenerator;
+import io.github.prolobjectlink.web.platform.GrizzlyServerControl;
+import io.github.prolobjectlink.web.platform.GrizzlyWebServer;
+import io.github.prolobjectlink.web.platform.WebPlatformUtil;
+import io.github.prolobjectlink.web.platform.WebServerControl;
+import io.github.prolobjectlink.web.platform.linux.grizzly.LinuxGrizzlyWebServer;
+import io.github.prolobjectlink.web.platform.macosx.grizzly.MacosxGrizzlyWebServer;
+import io.github.prolobjectlink.web.platform.win32.grizzly.Win32GrizzlyWebServer;
 
 /**
  * 

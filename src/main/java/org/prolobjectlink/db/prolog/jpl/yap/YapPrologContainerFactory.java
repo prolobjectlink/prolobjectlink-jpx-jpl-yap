@@ -21,9 +21,9 @@
  */
 package org.prolobjectlink.db.prolog.jpl.yap;
 
-import org.prolobjectlink.db.HierarchicalCache;
-import org.prolobjectlink.db.etc.Settings;
-import org.prolobjectlink.db.prolog.PrologContainerFactory;
+import io.github.prolobjectlink.db.HierarchicalCache;
+import io.github.prolobjectlink.db.etc.Settings;
+import io.github.prolobjectlink.db.prolog.PrologContainerFactory;
 
 public final class YapPrologContainerFactory extends PrologContainerFactory {
 
