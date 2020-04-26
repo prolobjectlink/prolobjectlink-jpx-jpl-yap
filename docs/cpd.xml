@@ -1,3 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pmd-cpd>
+<duplication lines="30" tokens="150">
+<file line="47" path="C:\Users\Jose Zalacain\Documents\eclipse-java-photon-workspace\prolobjectlink-jpx-jpl-yap\src\main\java\io\github\prolobjectlink\db\prolog\jpl\yap\YapPrologDatabaseEngine.java"/>
+<file line="42" path="C:\Users\Jose Zalacain\Documents\eclipse-java-photon-workspace\prolobjectlink-jpx-jpl-yap\src\main\java\io\github\prolobjectlink\db\prolog\jpl\yap\YapPrologWebEngine.java"/>
+<codefragment>
+<![CDATA[
+		super(provider);
+		converter = new PrologObjectConverter(provider);
+	}
+
+	public boolean unify(Object x, Object y) {
+		PrologTerm xt = converter.toTerm(x);
+		PrologTerm yt = converter.toTerm(y);
+		return unify(xt, yt);
+	}
+
+	public PrologProgrammer getProgrammer() {
+		return new YapPrologProgrammer(getProvider());
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = super.hashCode();
+		result = prime * result + ((converter == null) ? 0 : converter.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+]]>
+</codefragment>
+</duplication>
 </pmd-cpd>

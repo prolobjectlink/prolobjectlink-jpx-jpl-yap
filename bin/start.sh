@@ -12,6 +12,6 @@ export SWI_HOME=/opt/pas-linux-x64-1.0.0/swi
 export PATH=$PATH:$SWI_HOME/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/pas-linux-x64-1.0.0/swi/packages/jpl
 export CLASSPATH=$CLASSPATH:/opt/pas-linux-x64-1.0.0/swi/packages/jpl/jpl.jar
-java -classpath "$(dirname "$(pwd)")/lib/*" org.prolobjectlink.db.prolog.jpl.yap.YapPrologDatabaseConsole -m
-java -classpath "$(dirname "$(pwd)")/lib/*" org.prolobjectlink.db.prolog.jpl.yap.YapPrologDatabaseConsole -j "$(dirname "$(pwd)")/lib/prolobjectlink-jpx-model.jar"
-java -classpath "$(dirname "$(pwd)")/lib/*" org.prolobjectlink.db.prolog.jpl.yap.YapPrologDatabaseConsole -z 9110
+java -classpath "$(dirname "$(pwd)")/lib/*" io.github.prolobjectlink.db.prolog.jpl.yap.YapPrologDatabaseConsole -m
+java -classpath "$(dirname "$(pwd)")/lib/*" io.github.prolobjectlink.db.prolog.jpl.yap.YapPrologDatabaseConsole -j "$(dirname "$(pwd)")/lib/prolobjectlink-jpx-model.jar"
+java -classpath "$(dirname "$(pwd)")/lib/*" io.github.prolobjectlink.db.prolog.jpl.yap.YapPrologDatabaseConsole -z 9110
